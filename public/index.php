@@ -36,3 +36,9 @@ if (file_exists($loader = '../vendor/autoload.php')) {
 	";
 	exit();
 }
+
+// Load application environment
+if (file_exists(dirname(__DIR__) . '/.env')) {
+	$dotenv = new Dotenv\Dotenv(dirname(__DIR__), '.env');
+	$dotenv->load();
+}
