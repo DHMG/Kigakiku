@@ -37,8 +37,13 @@ if (file_exists($loader = '../vendor/autoload.php')) {
 	exit();
 }
 
+// Some simple constants to make our lives easier
+define('DS', DIRECTORY_SEPARATOR);
+define('APP_ROOT', dirname(__DIR__) . DS);
+define('WEB_ROOT', __DIR__ . DS);
+
 // Load application environment
-if (file_exists(dirname(__DIR__) . '/.env')) {
-	$dotenv = new Dotenv\Dotenv(dirname(__DIR__), '.env');
+if (file_exists(APP_ROOT . '.env')) {
+	$dotenv = new Dotenv\Dotenv(APP_ROOT, '.env');
 	$dotenv->load();
 }
