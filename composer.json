@@ -1,0 +1,13 @@
+{
+    "name": "dhmg/kigakiku",
+    "description": "Content management system for Doom Hamster Media Group",
+    "type": "project",
+    "license": "https://opensource.org/license/MIT MIT",
+    "authors": [
+        {
+            "name": "Mark LaDoux",
+            "email": "mark.ladoux@gmail.com"
+        }
+    ],
+    "require": {}
+}
