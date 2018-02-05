@@ -42,8 +42,5 @@ define('DS', DIRECTORY_SEPARATOR);
 define('APP_ROOT', dirname(__DIR__) . DS);
 define('WEB_ROOT', __DIR__ . DS);
 
-// Load application environment
-if (file_exists(APP_ROOT . '.env')) {
-	$dotenv = new Dotenv\Dotenv(APP_ROOT, '.env');
-	$dotenv->load();
-}
+
+require_once APP_ROOT . 'init/boot.php';
