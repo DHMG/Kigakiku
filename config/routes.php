@@ -1,5 +1,3 @@
 <?php
 
-$app->get('/', function(){
-	echo "Hello, World!";
-});
+$app->get('/', \App\Controller\HomeController::class . ':home');
