@@ -1,4 +1,4 @@
-<?php namespace Kigakiku;
+<?php namespace Kigakiku\Controller;
 /**
  * Kigakiku Controller Class
  */

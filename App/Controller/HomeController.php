@@ -3,7 +3,7 @@
  * HomeController
  */
 
-use Kigakiku\Controller;
+use Kigakiku\Controller\Controller;
 
 class HomeController extends Controller
 {
